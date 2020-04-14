@@ -23,7 +23,7 @@ $pass =  ( '║ User Login : ' );
 echo "\033[30;40m";
 $user = trim(fgets(STDIN));
 echo "\033[0m";
-if($user == "juleha" || $user == "pieter" || $user == "asiang" || $user == "martin" || $user == "imel" || $user == "hanif" || $user == "yanto" || $user == "21")
+if($user == "juleha" || $user == "pieter" || $user == "gilang" || $user == "rangga" || $user == "imel" || $user == "hanif" || $user == "yanto" || $user == "21")
 {
 	echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 	echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
@@ -39,7 +39,7 @@ else
 		echo "\e[92m[🚫]        \e[91mMasukkan User Registrasi      \e[92m [🚫]\n";
 	        echo "\e[92m[🚫]              \e[91m⚠️ WARNING ⚠️             \e[92m [🚫]\n";
 		echo "\e[92m[🚫]           \e[91mSEGERA MINTA IZIN          \e[92m [🚫]\n";
-	        echo "\e[92m[🚫]          \e[91mTELEGRAM :@mangubay         \e[92m [🚫]\n";
+	        echo "\e[92m[🚫]          \e[91mFACEBOOK :gilang ramadhan         \e[92m [🚫]\n";
 		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 goto login;
 }
@@ -111,7 +111,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo color("yellow",".");
         sleep(20);
         }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD090320A"}');
+        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD010420A"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","🔓▶️ Message: ".$message);
@@ -212,8 +212,8 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("green","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 112233 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
-         $data2 = '{"pin":"112233"}';
+         echo color("green","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 010909 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
+         $data2 = '{"pin":"010909"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
          $otpsetpin = trim(fgets(STDIN));
